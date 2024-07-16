@@ -1,4 +1,4 @@
-# Clock
+# StopWatch
 Clock is a privacy-conscious open-source clock, based on AOSP Clock.
 
 [<img src="/images/badge_github.png" alt="Get it on GitHub" height="80">](https://github.com/BlackyHawky/Clock/releases)
