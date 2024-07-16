@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2012 The Android Open Source Project
+    modified
+    SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
+-->
+
+<resources>
+
+    <declare-styleable name="CircleView">
+        <!-- Sets the center/radius of the circle relative to the view's bounds. -->
+        <attr name="android:gravity" />
+        <!-- The ARGB fill color of the circle. -->
+        <attr name="fillColor" format="color" />
+        <!-- The center x-coordinate of the circle. -->
+        <attr name="centerX" format="dimension" />
+        <!-- The center y-coordinate of the circle. -->
+        <attr name="centerY" format="dimension" />
+        <!-- The radius of the circle. -->
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+
+    <attr name="onStateTransition">
+        <enum name="actionDown" value="1" />
+        <enum name="actionDownUp" value="3" />
+        <enum name="actionUp" value="2" />
+        <enum name="sharedValueSet" value="4" />
+        <enum name="sharedValueUnset" value="5" />
+    </attr>
+
+    <attr name="viewTransitionMode">
+        <enum name="allStates" value="1" />
+        <enum name="currentState" value="0" />
+        <enum name="noState" value="2" />
+    </attr>
+
+</resources>

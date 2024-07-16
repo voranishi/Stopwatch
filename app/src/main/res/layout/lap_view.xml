@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2012 The Android Open Source Project
+    modified
+    SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lap_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFeatureSettings="tnum"
+        android:gravity="start"
+        android:textAllCaps="false" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lap_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFeatureSettings="tnum"
+        android:gravity="end"
+        android:textAllCaps="false" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lap_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFeatureSettings="tnum"
+        android:gravity="end"
+        android:textAllCaps="false" />
+
+</LinearLayout>

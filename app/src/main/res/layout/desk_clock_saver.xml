@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2009 The Android Open Source Project
+    modified
+    SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
+-->
+
+<!-- Special "screen saver mode" with just the time/date on black. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/saver_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:ignore="Overdraw">
+
+    <!--  Extra layout to let the clock float in the window -->
+    <LinearLayout
+        android:id="@+id/main_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <com.best.deskclock.AnalogClock
+            android:id="@+id/analog_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <com.best.deskclock.widget.AutoSizingTextClock
+            android:id="@+id/digital_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/main_clock_font_size"
+            tools:text="12:34" />
+
+        <include layout="@layout/date_and_next_alarm_time" />
+
+    </LinearLayout>
+
+</FrameLayout>

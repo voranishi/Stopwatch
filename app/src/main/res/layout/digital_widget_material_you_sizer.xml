@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-License-Identifier: GPL-3.0-only
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextClock
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:ellipsize="none"
+        android:singleLine="true"
+        tools:text="Sat. 20 Jan."
+        tools:textSize="18sp"
+        tools:textColor="@color/digital_widget_text_color" />
+
+    <TextClock
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:ellipsize="none"
+        android:format12Hour="@string/lock_screen_12_hour_format"
+        android:format24Hour="@string/lock_screen_24_hour_format"
+        android:singleLine="true"
+        tools:text="01:23"
+        tools:textSize="70sp"
+        tools:textColor="@color/digital_widget_time_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <!-- This view is drawn to a Bitmap and sent to the widget as an icon. -->
+        <TextView
+            android:id="@+id/nextAlarmIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="@string/clock_emoji"
+            tools:text=""
+            tools:drawableStart="@drawable/ic_tab_alarm_static"
+            tools:paddingHorizontal="3dp"
+            tools:drawableTint="@color/digital_widget_text_color"
+            tools:textColor="@color/digital_widget_text_color" />
+
+        <TextView
+            android:id="@+id/nextAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="3dp"
+            android:includeFontPadding="false"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:textColor="@color/digital_widget_text_color"
+            tools:text="Mo, 07:30 AM"
+            tools:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

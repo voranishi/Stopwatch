@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2016 The Android Open Source Project
+    modified
+    SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="10dp"
+    android:paddingBottom="20dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.best.deskclock.AnalogClock
+            android:id="@+id/analog_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:visibility="gone" />
+
+        <com.best.deskclock.widget.AutoSizingTextClock
+            android:id="@+id/digital_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textSize="70sp"
+            tools:text="12:34" />
+
+    </FrameLayout>
+
+    <include layout="@layout/date_and_next_alarm_time" />
+
+</LinearLayout>

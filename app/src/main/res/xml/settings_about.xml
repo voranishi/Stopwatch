@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-License-Identifier: GPL-3.0-only
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/about_title">
+
+    <Preference
+        android:key="about_title"
+        android:layout="@layout/settings_about_title"
+        android:selectable="false"
+        tools:title="@string/app_label" />
+
+    <Preference
+        android:key="about_version"
+        android:layout="@layout/settings_preference_layout"
+        android:title="@string/version"
+        android:summary="@string/version_text"
+        android:icon="@drawable/ic_about"
+        android:selectable="false"
+        app:singleLineTitle="false"
+        tools:summary="1.0" />
+
+    <Preference
+        android:key="about_whats_new"
+        android:layout="@layout/settings_preference_layout"
+        android:title="@string/whats_new_title"
+        android:icon="@drawable/ic_about_update"
+        app:singleLineTitle="false" />
+
+    <Preference
+        android:key="about_features"
+        android:layout="@layout/settings_preference_layout"
+        android:title="@string/features_title"
+        android:icon="@drawable/ic_about_features"
+        app:singleLineTitle="false" />
+
+    <Preference
+        android:title="@string/about_github_link"
+        android:layout="@layout/settings_preference_layout"
+        android:icon="@drawable/ic_about_github"
+        app:singleLineTitle="false">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/BlackyHawky/Clock" />
+    </Preference>
+
+    <Preference
+        android:layout="@layout/settings_preference_layout"
+        android:title="@string/license"
+        android:summary="@string/gnu_gpl"
+        android:icon="@drawable/ic_about_license"
+        app:singleLineTitle="false">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="https://github.com/BlackyHawky/Clock/blob/main/LICENSE-GPL-3" />
+    </Preference>
+
+    <PreferenceCategory
+        android:title="@string/contributors"
+        android:layout="@layout/settings_preference_category_layout"
+        app:allowDividerAbove="false"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:layout="@layout/settings_preference_layout"
+            android:title="qw123wh"
+            app:iconSpaceReserved="false">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://github.com/qw123wh" />
+        </Preference>
+
+        <Preference
+            android:layout="@layout/settings_preference_layout"
+            android:title="odmfl"
+            app:iconSpaceReserved="false">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://github.com/odmfl" />
+        </Preference>
+
+        <Preference
+            android:layout="@layout/settings_preference_layout"
+            android:title="Nilsu11"
+            app:iconSpaceReserved="false">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://github.com/Nilsu11" />
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/credits"
+        android:layout="@layout/settings_preference_category_layout"
+        app:allowDividerAbove="false"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:layout="@layout/settings_preference_layout"
+            android:title="LineageOS"
+            app:iconSpaceReserved="false">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://github.com/LineageOS" />
+        </Preference>
+
+        <Preference
+            android:layout="@layout/settings_preference_layout"
+            android:title="crDroid Android"
+            app:iconSpaceReserved="false">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://github.com/crdroidandroid" />
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

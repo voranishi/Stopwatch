@@ -1,6 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2016 The Android Open Source Project
+    modified
+    SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
+-->
+
 <resources>
-    <color name="colorPrimary">#52dbfe</color>
-    <color name="colorPrimaryDark">#369ee3</color>
-    <color name="colorAccent">#D81B60</color>
+    <!-- Material colors -->
+    <color name="md_theme_primary">#00668B</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#C1E8FF</color>
+    <color name="md_theme_onPrimaryContainer">#001E2C</color>
+    <color name="md_theme_inversePrimary">#76D1FF</color>
+    <color name="md_theme_primaryFixed">#C1E8FF</color>
+    <color name="md_theme_primaryFixedDim">#76D1FF</color>
+    <color name="md_theme_onPrimaryFixed">#001E2C</color>
+    <color name="md_theme_onPrimaryFixedVariant">#004C69</color>
+
+    <color name="md_theme_secondary">#4E616C</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_secondaryContainer">#D1E5F4</color>
+    <color name="md_theme_onSecondaryContainer">#091E28</color>
+    <color name="md_theme_secondaryFixed">#D1E5F4</color>
+    <color name="md_theme_secondaryFixedDim">#4E616C</color>
+    <color name="md_theme_onSecondaryFixed">#091E28</color>
+    <color name="md_theme_onSecondaryFixedVariant">#374955</color>
+
+    <color name="md_theme_tertiary">#605A7C</color>
+    <color name="md_theme_onTertiary">#FFFFFF</color>
+    <color name="md_theme_tertiaryContainer">#E6DEFF</color>
+    <color name="md_theme_onTertiaryContainer">#1D1736</color>
+    <color name="md_theme_tertiaryFixed">#E6DEFF</color>
+    <color name="md_theme_tertiaryFixedDim">#CAC1EA</color>
+    <color name="md_theme_onTertiaryFixed">#1D1736</color>
+    <color name="md_theme_onTertiaryFixedVariant">#484264</color>
+
+    <color name="md_theme_error">#B3261E</color>
+    <color name="md_theme_onError">#FFFFFF</color>
+    <color name="md_theme_errorContainer">#F9DEDC</color>
+    <color name="md_theme_onErrorContainer">#410E0B</color>
+    <color name="md_theme_outline">#70777C</color>
+    <color name="md_theme_outlineVariant">#C0C7CD</color>
+    <color name="md_theme_background">#FCFCFF</color>
+    <color name="md_theme_onBackground">#191C1E</color>
+    <color name="md_theme_surface">#EBF1F8</color>
+    <color name="md_theme_onSurface">#191C1E</color>
+    <color name="md_theme_surfaceVariant">#DCE3E9</color>
+    <color name="md_theme_onSurfaceVariant">#40484D</color>
+    <color name="md_theme_inverseSurface">#2E3133</color>
+    <color name="md_theme_inverseOnSurface">#F0F0F3</color>
+    <color name="md_theme_surfaceContainerLowest">#FFFFFF</color>
+    <color name="md_theme_surfaceContainerHighest">#DCE3E9</color>
+
+    <!-- Widget colors -->
+    <color name="analog_widget_background">#E0F3FF</color>
+    <color name="analog_widget_hour_hand_color">#374955</color>
+    <color name="analog_widget_minute_hand_color">#007FAC</color>
+    <color name="analog_widget_second_hand_color">#787296</color>
+    <color name="digital_widget_background_color">#E0F3FF</color>
+    <color name="digital_widget_time_color">#00668B</color>
+    <color name="digital_widget_text_color">#1D1B20</color>
+
+    <!-- The colors are picked up from https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors
+    except for xxxColorBackground -->
+    <!-- Blue Gray colors -->
+    <!-- Blue Gray 600 -->
+    <color name="blueGrayColorAccent">#546E7A</color>
+    <!-- Blue Gray 600 -->
+    <color name="blueGrayColorPrimary">#546E7A</color>
+    <!-- Blue Gray 50 -->
+    <color name="blueGrayColorSurface">#ECEFF1</color>
+    <!-- Blue Gray 200 -->
+    <color name="blueGrayPrimaryInverse">#B0BEC5</color>
+    <!-- Blue Gray 100 -->
+    <color name="blueGrayPrimaryContainer">#CFD8DC</color>
+    <color name="blueGrayColorBackground">#FCFCFF</color>
+
+    <!-- Brown colors -->
+    <!-- Brown 600 -->
+    <color name="brownColorAccent">#6D4C41</color>
+    <!-- Brown 600 -->
+    <color name="brownColorPrimary">#FF6D4C41</color>
+    <!-- Brown 50 -->
+    <color name="brownColorSurface">#EFEBE9</color>
+    <!-- Brown 200 -->
+    <color name="brownPrimaryInverse">#BCAAA4</color>
+    <!-- Brown 100 -->
+    <color name="brownPrimaryContainer">#D7CCC8</color>
+    <color name="brownColorBackground">#FCFCFF</color>
+
+    <!-- Green colors -->
+    <!-- Green 600 -->
+    <color name="greenColorAccent">#43A047</color>
+    <!-- Green 600 -->
+    <color name="greenColorPrimary">#43A047</color>
+    <!-- Green 50 -->
+    <color name="greenColorSurface">#E8F5E9</color>
+    <!-- Green 200 -->
+    <color name="greenPrimaryInverse">#A5D6A7</color>
+    <!-- Green 100 -->
+    <color name="greenPrimaryContainer">#C8E6C9</color>
+    <color name="greenColorBackground">#FCFCFF</color>
+
+    <!-- Indigo colors -->
+    <!-- Indigo 600 -->
+    <color name="indigoColorAccent">#3949AB</color>
+    <!-- Indigo 600 -->
+    <color name="indigoColorPrimary">#3949AB</color>
+    <!-- Indigo 50 -->
+    <color name="indigoColorSurface">#E8EAF6</color>
+    <!-- Indigo 200 -->
+    <color name="indigoPrimaryInverse">#9FA8DA</color>
+    <!-- Indigo 100 -->
+    <color name="indigoPrimaryContainer">#C5CAE9</color>
+    <color name="indigoColorBackground">#FCFCFF</color>
+
+    <!-- Orange colors -->
+    <!-- Orange 600 -->
+    <color name="orangeColorAccent">#FB8C00</color>
+    <!-- Orange 600 -->
+    <color name="orangeColorPrimary">#FB8C00</color>
+    <!-- Orange 50 -->
+    <color name="orangeColorSurface">#FFF3E0</color>
+    <!-- Orange 200 -->
+    <color name="orangePrimaryInverse">#FFCC80</color>
+    <!-- Orange 100 -->
+    <color name="orangePrimaryContainer">#FFE0B2</color>
+    <color name="orangeColorBackground">#FCFCFF</color>
+
+    <!-- Pink colors -->
+    <!-- Pink 600 -->
+    <color name="pinkColorAccent">#D81B60</color>
+    <!-- Pink 600 -->
+    <color name="pinkColorPrimary">#D81B60</color>
+    <!-- Pink 50 -->
+    <color name="pinkColorSurface">#FCE4EC</color>
+    <!-- Pink 200 -->
+    <color name="pinkPrimaryInverse">#F48FB1</color>
+    <!-- Pink 100 -->
+    <color name="pinkPrimaryContainer">#F8BBD0</color>
+    <color name="pinkColorBackground">#FCFCFF</color>
+
+    <!-- Red colors -->
+    <!-- Red 600 -->
+    <color name="redColorAccent">#E53935</color>
+    <!-- Red 600 -->
+    <color name="redColorPrimary">#E53935</color>
+    <!-- Red 50 -->
+    <color name="redColorSurface">#FFEBEE</color>
+    <!-- Red 200 -->
+    <color name="redPrimaryInverse">#EF9A9A</color>
+    <!-- Red 100 -->
+    <color name="redPrimaryContainer">#FFCDD2</color>
+    <color name="redColorBackground">#FCFCFF</color>
 </resources>
